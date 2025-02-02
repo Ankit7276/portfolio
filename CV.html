@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit - CV</title>  
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        /* Main CV Container */
+        .cv-container {
+            background: #fff;
+            width: 80%;
+            max-width: 800px;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            color: #333;
+            margin: 0;
+        }
+
+        .header h2 {
+            color: #8a71a7;
+            font-weight: normal;
+            margin-top: 0.5rem;
+        }
+
+        .contact-info {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 1.4rem;
+            color: #8a71a7;
+            margin-top: 1.5rem;
+            border-bottom: 2px solid #8a71a7;
+            padding-bottom: 0.3rem;
+            text-transform: uppercase;
+        }
+
+        /* Section Content */
+        .section-content {
+            color: #333;
+            line-height: 1.6;
+            margin: 0.8rem 0;
+        }
+
+        /* Skills & Personal Info */
+        .skills, .personal-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        /* Download Button */
+        .download-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: #8a71a7;
+            color: #fff;
+            padding: 1rem;
+            margin-top: 2rem;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background: #a086bc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="cv" class="cv-container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Ankit Krishnadhar Dubey</h1>
+            <h2>Front-end Developer</h2>
+            <p class="contact-info">+91 7276260989 | ankit7276260989@gmail.com<br>410 Sai Chhaya Apt, Pragati Nagar, Nallasopara (East), Palghar 401209</p>
+        </div>
+
+        <!-- Profile Summary -->
+        <div>
+            <h3 class="section-title">Profile Summary</h3>
+            <p class="section-content">Aspiring developer seeking an opportunity to enhance my knowledge and skills in a professional environment, aiming to achieve both personal and organizational goals.</p>
+        </div>
+
+        <!-- Work Experience -->
+        <div>
+            <h3 class="section-title">Work Experience</h3>
+            <p class="section-content"><strong>Professional eSolutions (India) Pvt. Ltd.</strong> | Software Support Engineer <em>(June 2023 – Present)</em><br>Managing the booking software for PVR-INOX cinemas, providing technical support and troubleshooting issues to ensure client satisfaction.</p>
+        </div>
+
+        <!-- Projects -->
+        <div>
+            <h3 class="section-title">Projects</h3>
+            <div class="section-content">
+                <p><strong>Responsive Website Development:</strong> Built a responsive website using HTML, CSS, JavaScript, PHP, and MySQL with dynamic content management and user authentication.</p>
+                <p><strong>Image Cartoonifier:</strong> Created a machine-learning-based project to convert images into cartoon styles using image processing techniques.</p>
+                <p><strong>C# Projects with Database Integration:</strong> Developed mini-projects in C# with database connectivity, including calculators and CRUD operations.</p>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div>
+            <h3 class="section-title">Education</h3>
+            <div class="section-content">
+                <p><strong>M.Sc. Computer Science (Pursuing)</strong> | Department of Computer Science, Mumbai University (2023-2025)</p>
+                <p><strong>B.Sc. Computer Science</strong> | R.D. & S.H. National College (2020-2023)</p>
+                <p><strong>HSC, Maharashtra Board</strong> | Thakur Vidya Mandir High School & Jr. College (2018-2020)</p>
+                <p><strong>SSC, Maharashtra Board</strong> | Thakur Vidya Mandir High School & Jr. College (2018)</p>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div>
+            <h3 class="section-title">Skills</h3>
+            <div class="skills section-content">
+                <p></p><i class='bx bx-radio-circle-marked'></i> Project Management<br>
+                <i class='bx bx-radio-circle-marked'></i> Public Relations<br>
+                <i class='bx bx-radio-circle-marked'></i> Teamwork<br>
+                <i class='bx bx-radio-circle-marked'></i> Time Management<br>
+                <i class='bx bx-radio-circle-marked'></i> Leadership<br>
+                <i class='bx bx-radio-circle-marked'></i> Communication<br>
+                <i class='bx bx-radio-circle-marked'></i> Critical Thinking
+            </p>
+            </div>
+        </div>
+
+        <!-- Personal Information -->
+        <div>
+            <h3 class="section-title">Personal Information</h3>
+            <div class="personal-info section-content">
+                <P><i class='bx bx-radio-circle-marked'></i> Name: Ankit Dubey<br>
+                <i class='bx bx-radio-circle-marked'></i> Gender: Male<br>
+                <i class='bx bx-radio-circle-marked'></i> Religion: Hindu<br>
+                <i class='bx bx-radio-circle-marked'></i> Marital Status: Unmarried<br>
+                <i class='bx bx-radio-circle-marked'></i> Languages Known: English, Hindi, Marathi<br>
+                <i class='bx bx-radio-circle-marked'></i> Nationality: Indian<br>
+                <i class='bx bx-radio-circle-marked'></i> Mother Tongue: Hindi
+                </P>
+            </div>
+        </div>
+
+        <!-- Download CV Button -->
+        <button onclick="downloadPDF()" class="download-btn">Download CV as PDF</button>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            const cv = document.getElementById('cv');
+            html2pdf(cv, {
+                margin:       0.5,
+                filename:     'Ankit_Krishnadhar_Dubey_CV.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2 },
+                jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+            });
+        }
+    </script>
+
+</body>
+</html>

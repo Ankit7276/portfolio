@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/25588e6c4b.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="background-layer" id="background"></div>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+
+            <nav>
+
+                <!-- Checkbox for toggling menu -->
+                <input type="checkbox" id="check">
+
+                <!-- Menu icon -->
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+
+                <!--   -->
+                <label class="logo">[!Ankit <i class='bx bx-wink-smile' style="color: #ffffff;"></i>]</label>
+                <ul id="sidemenu">
+                    <li><a class="active" href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <!-- <i class="fas fa-times" onclick="closemenu()"></i> -->
+                </ul>
+                <!-- <i class="fas fa-bars" onclick="openmenu()"></i> -->
+            </nav>
+
+
+            <div class="header-text">
+                <h1>Hi, I'm <span>Ankit Dubey</span> from Bharat</h1>
+                <p>Full Stack Developer!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        <i class='bx bx-radio-circle-marked'></i> Name: Ankit Dubey<br>
+                        <i class='bx bx-radio-circle-marked'></i> Father Name: Krishnadhar Dubey<br>
+                        <i class='bx bx-radio-circle-marked'></i> Gender: Male<br>
+                        <i class='bx bx-radio-circle-marked'></i> Religion: Hindu<br>
+                        <i class='bx bx-radio-circle-marked'></i> Marital Status: Unmarried<br>
+                        <i class='bx bx-radio-circle-marked'></i> Languages Known: English, Hindi, Marathi<br>
+                        <i class='bx bx-radio-circle-marked'></i> Nationality: Bharat<br>
+                        <i class='bx bx-radio-circle-marked'></i> Mother Tongue: Hindi<br>
+                        <i class='bx bx-radio-circle-marked'></i> Hobbies: Coding, Book Reading, Gym, Playing Kabaddi
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents" id="Skills">
+                        <ul>
+                            <li>Web Development: HTML, CSS, JavaScript, Python, PHP, MySQL</li>
+                            <li>App Development: Android Studio, Visual Studio, Flutter</li>
+                            <li>Graphic Design: Corel Draw, Adobe Photoshop, Adobe InDesign</li>
+                            <li>UI Design: Figma</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="Experience">
+                        <ul>
+                            <li>Currently working at Professional eSolutions (India) Pvt. Ltd. since June 2023</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><B>SSC, Maharashtra Board:<B> Completed in 2018</li>
+                            <li>HSC, Maharashtra Board, Completed in 2020</li>
+                            <li>B.Sc in Computer Science, R. D. National College, Completed in 2023</li>
+                            <li>M.Sc in Computer Science, University of Mumbai, Pursuing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web/App Developer</h2>
+                    <p>Creating interactive and user-friendly interfaces using HTML, CSS, and JavaScript.</p>
+                    <a href="Info1.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Logo/Poster Designer</h2>
+                    <p>Designing logos and posters that represent brand identities.</p>
+                    <a href="info2.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p>Ensuring a seamless and effective user experience through design and research.</p>
+                    <a href="info3.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/image1.png" alt="Social Media App">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>A modern and engaging social media platform.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image2.png" alt="Logo Design">
+                    <div class="layer">
+                        <h3>Logo Design</h3>
+                        <p>Professional logo design for various brands.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image.png" alt="UI/UX for App">
+                    <div class="layer">
+                        <h3>UI/UX for App</h3>
+                        <p>User-friendly app interfaces for a great experience.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> ankit7276260989@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7276260989</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://x.com/Akki_D_102/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/Ankit7276/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <!-- <a class="btn" href="images/Ankit  Resume.pdf">Download CV</a> -->
+                    <a class="btn" href="images/Ankit  Resume.pdf"
+                        style="display: inline-block; background-color: #ffa600; color: white; text-align: center; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-size: 16px; margin: 20px auto; display: block; width: max-content;">Download
+                        CV</a>
+
+                    <!-- <button class="btn"><span>Submit</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button> -->
+                    <!-- <li><a href="CV.html" >Download CV</a></li> -->
+                </div>
+                <div class="contact-right">
+                    <H3 id="con h" style="color: aliceblue;">Contact Me</H3>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Ankit Dubey. <i class="fa-solid fa-heart"></i> My Website</p>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopButton"><i class='bx bx-up-arrow-alt'></i></button>
+
+    <!-- JavaScript -->
+    <script src="script.js">
+
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+        document.getElementById("background").appendChild(canvas);
+
+        let particlesArray = [];
+        const numParticles = 100;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener("resize", resizeCanvas);
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.z = Math.random() * canvas.width;
+                this.speed = 0.5 + Math.random();
+                this.radius = 1.5 + Math.random() * 3;
+            }
+
+            update() {
+                this.z -= this.speed;
+                if (this.z <= 0) {
+                    this.z = canvas.width;
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                }
+            }
+
+            draw() {
+                const scale = canvas.width / this.z;
+                ctx.beginPath();
+                ctx.arc(
+                    this.x * scale,
+                    this.y * scale,
+                    this.radius * scale,
+                    0,
+                    Math.PI * 2
+                );
+                ctx.fillStyle = "#00ffaa";
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particlesArray = [];
+            for (let i = 0; i < numParticles; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+        initParticles();
+
+        function animate() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            particlesArray.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info 1</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* General Body Styling */
+        body {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Card Container */
+        .card {
+            background: white;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            padding: 2rem;
+            text-align: center;
+            transform: perspective(1000px) rotateX(2deg) rotateY(2deg);
+            transition: all 0.3s ease-in-out;
+            overflow-y: auto; /* Allows scrolling for overflow content */
+            max-height: 90vh; /* Limits card height to avoid cutting off content */
+        }
+
+        .card:hover {
+            transform: perspective(1000px) rotateX(0) rotateY(0);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Header Styling */
+        .card h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Paragraph Styling */
+        .card p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        /* Button Styling */
+        .card button {
+            background-color: #8a71a7;
+            color: #e7e9d3;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .card button:hover {
+            background-color: #a086bc;
+        }
+
+        .card button a {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1><i class='bx bx-code-alt'></i> Developer Roles</h1>
+        <p>Front-End Developer: Front-end developers focus on creating the user interface and user
+            experience of a website or web application. They work with HTML, CSS, and JavaScript to build
+            the visual and interactive components that users see and interact with in their web browsers.</p>
+
+        <p>Back-End Developer: Back-end developers are responsible for the server side of web development. They work with
+            server technologies, databases, and server scripting languages like PHP, Python, Ruby, or Node.js. Their role
+            involves handling data, security, and server management.</p>
+
+        <p>Full-Stack Developer: Full-stack developers are proficient in both front-end and back-end technologies. They
+            can work on the entire web development process, from designing user interfaces to managing server databases.</p>
+
+        <p>Mobile App Developer: Mobile app developers create applications for mobile devices like smartphones and tablets.
+            They typically specialize in one of the major mobile platforms, such as iOS (using Swift or Objective-C) or
+            Android (using Java or Kotlin). Mobile app development can include both native app development and
+            cross-platform app development using frameworks like React Native or Flutter.</p>
+
+        <p>Desktop App Developer: Desktop app developers build applications that run on desktop operating systems like
+            Windows, macOS, or Linux. They may use languages like C++, Java, C#, or Electron (which uses web technologies
+            like HTML, CSS, and JavaScript).</p>
+
+        <p>Cross-Platform App Developer: Cross-platform app developers create applications that can run on multiple
+            platforms with a single codebase. This is often done using frameworks like React Native, Flutter, or Xamarin,
+            which allow developers to write code in a single language and deploy it to different platforms.</p>
+
+        <button>
+            <a href="index.html"><i class='bx bx-arrow-back'></i> Back</a>
+        </button>
+    </div>
+</body>
+
+</html>
